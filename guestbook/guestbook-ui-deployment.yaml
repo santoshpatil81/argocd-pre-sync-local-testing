@@ -1,5 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
+namespace: test
 metadata:
   name: guestbook-ui
 spec:
@@ -22,6 +23,7 @@ spec:
 ---
 apiVersion: v1
 kind: Service
+namespace: test
 metadata:
   name: guestbook-ui
 spec:
